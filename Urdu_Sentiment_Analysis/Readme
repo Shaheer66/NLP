@@ -1,1 +1,9 @@
-
+It is a complete end-to-end natural language processing pipeline to process raw Urdu data of Twitter comments available at https://www.kaggle.com/datasets/shumailakhan/urdu-sarcastic-tweets-dataset. 
+We are mainly focused on building sentiment analysis tool to classify into sarcastic or not that is positive or negative
+The dataset is consist of two columns named urdu_text(contains Urdu text) and is_sarcastic(contains boolean value that is 0 or 1)
+We have to build a Nave Baye's classifier to classify the comments
+This involves the complete text preprocessing, feature extraction and then fitting to a NB classifier
+The complete code is available in the .ipynb file and involves stop words, punctuation, hashtag removals and other text cleaning
+Stemming, Lemmatization collectively POS tagging to build a more refine model
+Using that lemmatized text we created a tf-idf vector space to extract features
+On the basis of tf-idf, we use Nave Baye's (mltinomial) classifier to classify the comments 
